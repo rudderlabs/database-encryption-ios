@@ -95,3 +95,5 @@ iOSInjectionProject/
 .scannerwork
 relative_or_absolute_path_to_cache_location
 compile_commands.json
+RudderConfig.plist
+
