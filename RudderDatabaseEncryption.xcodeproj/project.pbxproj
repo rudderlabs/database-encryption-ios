@@ -30,6 +30,17 @@
 		B008DF928634DCF7EA42456F /* Pods_RudderDatabaseEncryption_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderDatabaseEncryption_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE728C42A5976C307879BB20 /* Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-tvOS/Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED23E6CF2ABAD30700DEF359 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ED23E6D12ABAD82B00DEF359 /* deploy-cocoapods.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "deploy-cocoapods.yml"; sourceTree = "<group>"; };
+		ED23E6D22ABAD82B00DEF359 /* notion-pr-sync.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "notion-pr-sync.yml"; sourceTree = "<group>"; };
+		ED23E6D32ABAD82B00DEF359 /* draft-new-beta-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-beta-release.yml"; sourceTree = "<group>"; };
+		ED23E6D42ABAD82B00DEF359 /* check-pr-title.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "check-pr-title.yml"; sourceTree = "<group>"; };
+		ED23E6D52ABAD82B00DEF359 /* create-hotfix-branch.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "create-hotfix-branch.yml"; sourceTree = "<group>"; };
+		ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "publish-new-release.yml"; sourceTree = "<group>"; };
+		ED23E6D72ABAD82B00DEF359 /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		ED23E6D82ABAD82B00DEF359 /* deploy-cocoapods-manual.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "deploy-cocoapods-manual.yml"; sourceTree = "<group>"; };
+		ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "slack-notify.yml"; sourceTree = "<group>"; };
+		ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-quality-checks.yml"; sourceTree = "<group>"; };
+		ED23E6DB2ABAD82B00DEF359 /* draft-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-release.yml"; sourceTree = "<group>"; };
 		ED87386D2AB2D3540076D24A /* RudderDatabaseEncryption_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderDatabaseEncryption_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderDatabaseEncryption.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSEncryptedDatabaseProvider.h; sourceTree = "<group>"; };
@@ -93,9 +104,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED23E6D02ABAD82B00DEF359 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */,
+				ED23E6D42ABAD82B00DEF359 /* check-pr-title.yml */,
+				ED23E6D52ABAD82B00DEF359 /* create-hotfix-branch.yml */,
+				ED23E6D82ABAD82B00DEF359 /* deploy-cocoapods-manual.yml */,
+				ED23E6D12ABAD82B00DEF359 /* deploy-cocoapods.yml */,
+				ED23E6D32ABAD82B00DEF359 /* draft-new-beta-release.yml */,
+				ED23E6DB2ABAD82B00DEF359 /* draft-new-release.yml */,
+				ED23E6D22ABAD82B00DEF359 /* notion-pr-sync.yml */,
+				ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */,
+				ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */,
+				ED23E6D72ABAD82B00DEF359 /* test.yml */,
+			);
+			name = workflows;
+			path = .github/workflows;
+			sourceTree = "<group>";
+		};
 		ED8738632AB2D3540076D24A = {
 			isa = PBXGroup;
 			children = (
+				ED23E6D02ABAD82B00DEF359 /* workflows */,
 				ED23E6CF2ABAD30700DEF359 /* README.md */,
 				ED87389A2AB35FC60076D24A /* Podfile */,
 				ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */,

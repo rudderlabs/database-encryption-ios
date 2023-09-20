@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				ED23E6BF2ABAC85D00DEF359 /* RudderConfig.plist */,
-				ED23E6C02ABAC85D00DEF359 /* SampleRudderConfig.plist */,
 				ED23E6C12ABAC85D00DEF359 /* RudderConfig.swift */,
+				ED23E6C02ABAC85D00DEF359 /* SampleRudderConfig.plist */,
 			);
 			name = RudderConfig;
 			path = ../../RudderConfig;
