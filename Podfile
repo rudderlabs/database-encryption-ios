@@ -1,7 +1,8 @@
-source 'https://github.com/cocoapods/Specs.git'
+source 'https://github.com/rudderlabs/Specs.git'
 workspace 'RudderDatabaseEncryption.xcworkspace'
 use_frameworks!
 inhibit_all_warnings!
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
 def shared_pods
     pod 'RudderDatabaseEncryption', :path => '.'

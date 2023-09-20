@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DHAVE_USLEEP=1 -DSQLCIPHER_CRYPTO', 'HEADER_SEARCH_PATHS' => 'SQLCipher' }
 
-  s.dependency 'Rudder', '1.20.0'
+  s.dependency 'Rudder', '~> 1.20'
   s.dependency 'SQLCipher', '~> 4.0'
 end
