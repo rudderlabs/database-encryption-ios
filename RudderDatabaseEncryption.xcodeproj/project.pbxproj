@@ -39,6 +39,7 @@
 		ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "slack-notify.yml"; sourceTree = "<group>"; };
 		ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-quality-checks.yml"; sourceTree = "<group>"; };
 		ED23E6DB2ABAD82B00DEF359 /* draft-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-release.yml"; sourceTree = "<group>"; };
+		ED23E6DD2ABAE2BA00DEF359 /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
 		ED87386D2AB2D3540076D24A /* RudderDatabaseEncryption_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderDatabaseEncryption_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderDatabaseEncryption.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSEncryptedDatabaseProvider.h; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 				ED23E6D22ABAD82B00DEF359 /* notion-pr-sync.yml */,
 				ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */,
 				ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */,
+				ED23E6DD2ABAE2BA00DEF359 /* test.yml */,
 			);
 			name = workflows;
 			path = .github/workflows;
