@@ -18,26 +18,64 @@
 
 ---
 
-# \*\*Repo Name\*\*
+# Integrating RudderStack iOS SDK with SQLCipher
 
-\*\*Repo description\*\*
+This repository contains the resources and assets required to integrate the [RudderStack iOS SDK](https://www.rudderstack.com/docs/sources/event-streams/sdks/rudderstack-ios-sdk/) with [SQLICipher](https://www.zetetic.net/).
 
-## Overview
+| Important: This feature is supported for SQLCipher v4.0 and above.|
+| :---|
 
-\*\*Describe what the software does.\*\*
+## Step 1: Integrate the SDK with SQLCipher
 
-## Features
+1. `RudderDatabaseEncryption` is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your `Podfile`:
 
-\*\*Describe the key features, if necessary.\*\*
+```ruby
+pod 'RudderDatabaseEncryption', '~> 1.0.0'
+```
+2. Run the `pod install` command.
 
-## Getting started
+## Step 2: Import the SDK
 
-\*\*Describe how to use the software.\*\*
+### Swift
 
-## Contribute
+```swift
+import RudderDatabaseEncryption
+```
 
-We would love to see you contribute to RudderStack. Get more information on how to contribute [**here**](CONTRIBUTING.md).
+### Objective C
 
-## License
+```objectivec
+@import RudderDatabaseEncryption;
+```
 
-The RudderStack \*\*software name\*\* is released under the [**MIT License**](https://opensource.org/licenses/MIT).
+## Step 3: Initialize the RudderStack client (`RSClient`)
+
+Place the following in your `AppDelegate` under the `didFinishLaunchingWithOptions` method.
+
+### Objective C
+
+```objective-c
+RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
+[builder withDataPlaneUrl:DATA_PLANE_URL];
+[builder withDBEncryption:[[RSDBEncryption alloc] initWithKey:@"test1234" enable:YES databaseProvider:[RSEncryptedDatabaseProvider new]]];
+[RSClient getInstance:WRITE_KEY config:[builder build]];
+```
+### Swift
+
+```swift
+let builder: RSConfigBuilder = RSConfigBuilder()
+            .withDataPlaneUrl(DATA_PLANE_URL)
+			.withDBEncryption(RSDBEncryption(key: "test1234", enable: true, databaseProvider: RSEncryptedDatabaseProvider()))
+RSClient.getInstance(WRITE_KEY, config: builder.build())
+```
+
+## About RudderStack
+
+RudderStack is the **customer data platform** for developers. With RudderStack, you can build and deploy efficient pipelines that collect customer data from every app, website, and SaaS platform, then activate your data in your warehouse, business, and marketing tools.
+
+| Start building a better, warehouse-first CDP that delivers complete, unified data to every part of your customer data stack. Sign up for [RudderStack Cloud](https://app.rudderstack.com/signup?type=freetrial) today. |
+| :---|
+
+## Contact us
+
+For queries on configuring or using this integration, start a conversation in our [Slack](https://rudderstack.com/join-rudderstack-slack-community) community.

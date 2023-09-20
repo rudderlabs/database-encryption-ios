@@ -15,27 +15,31 @@ jobs:
       BUILD_WRAPPER_OUT_DIR: build_wrapper_output_directory # Directory where build-wrapper output will be placed
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       - name: Install sonar-scanner and build-wrapper
-        uses: SonarSource/sonarcloud-github-c-cpp@v1
+        uses: SonarSource/sonarcloud-github-c-cpp@v2
         
       - name: Install xcpretty
         run: gem install xcpretty
 
+      - name: Install Cocoapods
+        run: gem install cocoapods
+        
+      - name: Pod install
+        run: pod install --repo-update
+    
       - name: Run build-wrapper
         run: |
-          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild -workspace <workspace-name>.xcworkspace -scheme <scheme-name> -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' | xcpretty
-          
-      - name: Run tests(suite)
-        run: |
-          xcodebuild -scheme <scheme-name> test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' -enableCodeCoverage YES -derivedDataPath build | xcpretty
-      - name: Collect coverage into one XML report
-        run: |
-          bash xccov-to-generic.sh build/Logs/Test/*.xcresult/ > generic-coverage.xml
-              
+          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild -workspace RudderDatabaseEncryption.xcworkspace -scheme RudderDatabaseEncryption-iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' | xcpretty
+                                      
       - name: SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           sonar-scanner -Dsonar.host.url=https://sonarcloud.io
+        
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

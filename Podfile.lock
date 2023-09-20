@@ -1,0 +1,45 @@
+PODS:
+  - MetricsReporter (1.1.0):
+    - RSCrashReporter (~> 1.0.0)
+    - RudderKit (~> 1.4.0)
+  - RSCrashReporter (1.0.0)
+  - Rudder (1.20.0):
+    - MetricsReporter (= 1.1.0)
+  - RudderDatabaseEncryption (1.0.0):
+    - Rudder (~> 1.20)
+    - SQLCipher (~> 4.0)
+  - RudderKit (1.4.0)
+  - SQLCipher (4.5.4):
+    - SQLCipher/standard (= 4.5.4)
+  - SQLCipher/common (4.5.4)
+  - SQLCipher/standard (4.5.4):
+    - SQLCipher/common
+
+DEPENDENCIES:
+  - Rudder
+  - RudderDatabaseEncryption (from `.`)
+  - SQLCipher
+
+SPEC REPOS:
+  https://github.com/rudderlabs/Specs.git:
+    - MetricsReporter
+    - RSCrashReporter
+    - Rudder
+    - RudderKit
+    - SQLCipher
+
+EXTERNAL SOURCES:
+  RudderDatabaseEncryption:
+    :path: "."
+
+SPEC CHECKSUMS:
+  MetricsReporter: d7f4da199ecceefb2e3a49a0b45b288fbadaca1f
+  RSCrashReporter: 7e26b51ac816e967acb58fa458040946a93a9e65
+  Rudder: d3294fdc77deefc9ad5148511777a1f0b85040d9
+  RudderDatabaseEncryption: 921614cf75c53e35687a276f2107ebe94dcc1be6
+  RudderKit: d9d6997696e1642b753d8bdf94e57af643a68f03
+  SQLCipher: 905b145f65f349f26da9e60a19901ad24adcd381
+
+PODFILE CHECKSUM: 56bd91ee7634e868fe37d98fa344d2550fada466
+
+COCOAPODS: 1.12.0

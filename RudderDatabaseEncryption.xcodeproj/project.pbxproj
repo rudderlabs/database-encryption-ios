@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154319A73D4E855335FEA3AB /* Pods_RudderDatabaseEncryption_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE3E10C1A467FD2B1723374 /* Pods_RudderDatabaseEncryption_iOS.framework */; };
+		93A95203EC6A51CEBEAC37E4 /* Pods_RudderDatabaseEncryption_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50261D68F2B64E83258016B5 /* Pods_RudderDatabaseEncryption_watchOS.framework */; };
+		D059E881F657D86D660B79E1 /* Pods_RudderDatabaseEncryption_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526A41347B54528F39712371 /* Pods_RudderDatabaseEncryption_tvOS.framework */; };
+		ED8738872AB2EB430076D24A /* RSEncryptedDatabaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED8738882AB2EB430076D24A /* RSEncryptedDatabaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8738862AB2EB430076D24A /* RSEncryptedDatabaseProvider.m */; };
+		ED87389E2AB35FE90076D24A /* RSEncryptedDatabaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED8738A22AB35FE90076D24A /* RSEncryptedDatabaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8738862AB2EB430076D24A /* RSEncryptedDatabaseProvider.m */; };
+		ED8738BC2AB360190076D24A /* RSEncryptedDatabaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED8738C02AB360190076D24A /* RSEncryptedDatabaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8738862AB2EB430076D24A /* RSEncryptedDatabaseProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		133591411AA2360C440A00AB /* Pods-RudderDatabaseEncryption-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-iOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-iOS/Pods-RudderDatabaseEncryption-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3465888249216A12DAADC880 /* Pods-RudderDatabaseEncryption-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-iOS.release.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-iOS/Pods-RudderDatabaseEncryption-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3FE3E10C1A467FD2B1723374 /* Pods_RudderDatabaseEncryption_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderDatabaseEncryption_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50261D68F2B64E83258016B5 /* Pods_RudderDatabaseEncryption_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderDatabaseEncryption_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		526A41347B54528F39712371 /* Pods_RudderDatabaseEncryption_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderDatabaseEncryption_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C575B23D49414A46FD3EB3 /* Pods-RudderDatabaseEncryption-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-watchOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-watchOS/Pods-RudderDatabaseEncryption-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A30664A892F649395ABF0360 /* Pods-RudderDatabaseEncryption-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-tvOS/Pods-RudderDatabaseEncryption-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		A6803F930E5BBF42030562C7 /* Pods-RudderDatabaseEncryption-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-watchOS.release.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-watchOS/Pods-RudderDatabaseEncryption-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		C5DD0FED8F53F0E04084C65F /* Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RudderDatabaseEncryption-tvOS/Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ED23E6CF2ABAD30700DEF359 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ED23E6D12ABAD82B00DEF359 /* deploy-cocoapods.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "deploy-cocoapods.yml"; sourceTree = "<group>"; };
+		ED23E6D22ABAD82B00DEF359 /* notion-pr-sync.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "notion-pr-sync.yml"; sourceTree = "<group>"; };
+		ED23E6D32ABAD82B00DEF359 /* draft-new-beta-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-beta-release.yml"; sourceTree = "<group>"; };
+		ED23E6D42ABAD82B00DEF359 /* check-pr-title.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "check-pr-title.yml"; sourceTree = "<group>"; };
+		ED23E6D52ABAD82B00DEF359 /* create-hotfix-branch.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "create-hotfix-branch.yml"; sourceTree = "<group>"; };
+		ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "publish-new-release.yml"; sourceTree = "<group>"; };
+		ED23E6D82ABAD82B00DEF359 /* deploy-cocoapods-manual.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "deploy-cocoapods-manual.yml"; sourceTree = "<group>"; };
+		ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "slack-notify.yml"; sourceTree = "<group>"; };
+		ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-quality-checks.yml"; sourceTree = "<group>"; };
+		ED23E6DB2ABAD82B00DEF359 /* draft-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-release.yml"; sourceTree = "<group>"; };
+		ED23E6DD2ABAE2BA00DEF359 /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		ED23E6DE2ABAECC400DEF359 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		ED87386D2AB2D3540076D24A /* RudderDatabaseEncryption_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderDatabaseEncryption_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderDatabaseEncryption.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSEncryptedDatabaseProvider.h; sourceTree = "<group>"; };
+		ED8738862AB2EB430076D24A /* RSEncryptedDatabaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSEncryptedDatabaseProvider.m; sourceTree = "<group>"; };
+		ED87389A2AB35FC60076D24A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED8738A92AB35FE90076D24A /* RudderDatabaseEncryption-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RudderDatabaseEncryption-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8738C72AB360190076D24A /* RudderDatabaseEncryption-watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RudderDatabaseEncryption-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED87386A2AB2D3540076D24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154319A73D4E855335FEA3AB /* Pods_RudderDatabaseEncryption_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738A32AB35FE90076D24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D059E881F657D86D660B79E1 /* Pods_RudderDatabaseEncryption_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738C12AB360190076D24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A95203EC6A51CEBEAC37E4 /* Pods_RudderDatabaseEncryption_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660287B9E3F8D4B4969B7CD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				133591411AA2360C440A00AB /* Pods-RudderDatabaseEncryption-iOS.debug.xcconfig */,
+				3465888249216A12DAADC880 /* Pods-RudderDatabaseEncryption-iOS.release.xcconfig */,
+				C5DD0FED8F53F0E04084C65F /* Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig */,
+				A30664A892F649395ABF0360 /* Pods-RudderDatabaseEncryption-tvOS.release.xcconfig */,
+				52C575B23D49414A46FD3EB3 /* Pods-RudderDatabaseEncryption-watchOS.debug.xcconfig */,
+				A6803F930E5BBF42030562C7 /* Pods-RudderDatabaseEncryption-watchOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6B110F9B7A30BE5D3921164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE3E10C1A467FD2B1723374 /* Pods_RudderDatabaseEncryption_iOS.framework */,
+				526A41347B54528F39712371 /* Pods_RudderDatabaseEncryption_tvOS.framework */,
+				50261D68F2B64E83258016B5 /* Pods_RudderDatabaseEncryption_watchOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED23E6D02ABAD82B00DEF359 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */,
+				ED23E6D42ABAD82B00DEF359 /* check-pr-title.yml */,
+				ED23E6D52ABAD82B00DEF359 /* create-hotfix-branch.yml */,
+				ED23E6D82ABAD82B00DEF359 /* deploy-cocoapods-manual.yml */,
+				ED23E6D12ABAD82B00DEF359 /* deploy-cocoapods.yml */,
+				ED23E6D32ABAD82B00DEF359 /* draft-new-beta-release.yml */,
+				ED23E6DB2ABAD82B00DEF359 /* draft-new-release.yml */,
+				ED23E6D22ABAD82B00DEF359 /* notion-pr-sync.yml */,
+				ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */,
+				ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */,
+				ED23E6DD2ABAE2BA00DEF359 /* test.yml */,
+			);
+			name = workflows;
+			path = .github/workflows;
+			sourceTree = "<group>";
+		};
+		ED23E6DF2ABAECF800DEF359 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				ED87389A2AB35FC60076D24A /* Podfile */,
+				ED23E6CF2ABAD30700DEF359 /* README.md */,
+				ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */,
+				ED23E6DE2ABAECC400DEF359 /* sonar-project.properties */,
+				ED23E6D02ABAD82B00DEF359 /* workflows */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		ED8738632AB2D3540076D24A = {
+			isa = PBXGroup;
+			children = (
+				ED23E6DF2ABAECF800DEF359 /* Other */,
+				ED87386F2AB2D3540076D24A /* Sources */,
+				ED87386E2AB2D3540076D24A /* Products */,
+				660287B9E3F8D4B4969B7CD4 /* Pods */,
+				E6B110F9B7A30BE5D3921164 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED87386E2AB2D3540076D24A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED87386D2AB2D3540076D24A /* RudderDatabaseEncryption_iOS.framework */,
+				ED8738A92AB35FE90076D24A /* RudderDatabaseEncryption-tvOS.framework */,
+				ED8738C72AB360190076D24A /* RudderDatabaseEncryption-watchOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED87386F2AB2D3540076D24A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ED8738772AB2D36A0076D24A /* Classes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ED8738772AB2D36A0076D24A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */,
+				ED8738862AB2EB430076D24A /* RSEncryptedDatabaseProvider.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED8738682AB2D3540076D24A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8738872AB2EB430076D24A /* RSEncryptedDatabaseProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED87389D2AB35FE90076D24A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED87389E2AB35FE90076D24A /* RSEncryptedDatabaseProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738BB2AB360190076D24A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8738BC2AB360190076D24A /* RSEncryptedDatabaseProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ED87386C2AB2D3540076D24A /* RudderDatabaseEncryption-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8738742AB2D3540076D24A /* Build configuration list for PBXNativeTarget "RudderDatabaseEncryption-iOS" */;
+			buildPhases = (
+				263A55B0C2B097F024A50F53 /* [CP] Check Pods Manifest.lock */,
+				ED8738682AB2D3540076D24A /* Headers */,
+				ED8738692AB2D3540076D24A /* Sources */,
+				ED87386A2AB2D3540076D24A /* Frameworks */,
+				ED87386B2AB2D3540076D24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RudderDatabaseEncryption-iOS";
+			productName = RudderDatabaseEncryption;
+			productReference = ED87386D2AB2D3540076D24A /* RudderDatabaseEncryption_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED87389B2AB35FE90076D24A /* RudderDatabaseEncryption-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8738A62AB35FE90076D24A /* Build configuration list for PBXNativeTarget "RudderDatabaseEncryption-tvOS" */;
+			buildPhases = (
+				393E390CC093B8B028EC01C0 /* [CP] Check Pods Manifest.lock */,
+				ED87389D2AB35FE90076D24A /* Headers */,
+				ED8738A02AB35FE90076D24A /* Sources */,
+				ED8738A32AB35FE90076D24A /* Frameworks */,
+				ED8738A52AB35FE90076D24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RudderDatabaseEncryption-tvOS";
+			productName = RudderDatabaseEncryption;
+			productReference = ED8738A92AB35FE90076D24A /* RudderDatabaseEncryption-tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED8738B92AB360190076D24A /* RudderDatabaseEncryption-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8738C42AB360190076D24A /* Build configuration list for PBXNativeTarget "RudderDatabaseEncryption-watchOS" */;
+			buildPhases = (
+				E75B60020F5B785DC6431857 /* [CP] Check Pods Manifest.lock */,
+				ED8738BB2AB360190076D24A /* Headers */,
+				ED8738BE2AB360190076D24A /* Sources */,
+				ED8738C12AB360190076D24A /* Frameworks */,
+				ED8738C32AB360190076D24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RudderDatabaseEncryption-watchOS";
+			productName = RudderDatabaseEncryption;
+			productReference = ED8738C72AB360190076D24A /* RudderDatabaseEncryption-watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED8738642AB2D3540076D24A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					ED87386C2AB2D3540076D24A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ED8738672AB2D3540076D24A /* Build configuration list for PBXProject "RudderDatabaseEncryption" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED8738632AB2D3540076D24A;
+			productRefGroup = ED87386E2AB2D3540076D24A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED87386C2AB2D3540076D24A /* RudderDatabaseEncryption-iOS */,
+				ED87389B2AB35FE90076D24A /* RudderDatabaseEncryption-tvOS */,
+				ED8738B92AB360190076D24A /* RudderDatabaseEncryption-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED87386B2AB2D3540076D24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738A52AB35FE90076D24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738C32AB360190076D24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		263A55B0C2B097F024A50F53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderDatabaseEncryption-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		393E390CC093B8B028EC01C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderDatabaseEncryption-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75B60020F5B785DC6431857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderDatabaseEncryption-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED8738692AB2D3540076D24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8738882AB2EB430076D24A /* RSEncryptedDatabaseProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738A02AB35FE90076D24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8738A22AB35FE90076D24A /* RSEncryptedDatabaseProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8738BE2AB360190076D24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8738C02AB360190076D24A /* RSEncryptedDatabaseProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED8738722AB2D3540076D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		ED8738732AB2D3540076D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		ED8738752AB2D3540076D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133591411AA2360C440A00AB /* Pods-RudderDatabaseEncryption-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED8738762AB2D3540076D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3465888249216A12DAADC880 /* Pods-RudderDatabaseEncryption-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WPX9KRKA8B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED8738A72AB35FE90076D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DD0FED8F53F0E04084C65F /* Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		ED8738A82AB35FE90076D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30664A892F649395ABF0360 /* Pods-RudderDatabaseEncryption-tvOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WPX9KRKA8B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		ED8738C52AB360190076D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C575B23D49414A46FD3EB3 /* Pods-RudderDatabaseEncryption-watchOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		ED8738C62AB360190076D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6803F930E5BBF42030562C7 /* Pods-RudderDatabaseEncryption-watchOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED8738672AB2D3540076D24A /* Build configuration list for PBXProject "RudderDatabaseEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8738722AB2D3540076D24A /* Debug */,
+				ED8738732AB2D3540076D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8738742AB2D3540076D24A /* Build configuration list for PBXNativeTarget "RudderDatabaseEncryption-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8738752AB2D3540076D24A /* Debug */,
+				ED8738762AB2D3540076D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8738A62AB35FE90076D24A /* Build configuration list for PBXNativeTarget "RudderDatabaseEncryption-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8738A72AB35FE90076D24A /* Debug */,
+				ED8738A82AB35FE90076D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8738C42AB360190076D24A /* Build configuration list for PBXNativeTarget "RudderDatabaseEncryption-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8738C52AB360190076D24A /* Debug */,
+				ED8738C62AB360190076D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED8738642AB2D3540076D24A /* Project object */;
+}
