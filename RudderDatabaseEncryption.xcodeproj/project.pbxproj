@@ -36,7 +36,6 @@
 		ED23E6D42ABAD82B00DEF359 /* check-pr-title.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "check-pr-title.yml"; sourceTree = "<group>"; };
 		ED23E6D52ABAD82B00DEF359 /* create-hotfix-branch.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "create-hotfix-branch.yml"; sourceTree = "<group>"; };
 		ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "publish-new-release.yml"; sourceTree = "<group>"; };
-		ED23E6D72ABAD82B00DEF359 /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
 		ED23E6D82ABAD82B00DEF359 /* deploy-cocoapods-manual.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "deploy-cocoapods-manual.yml"; sourceTree = "<group>"; };
 		ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "slack-notify.yml"; sourceTree = "<group>"; };
 		ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-quality-checks.yml"; sourceTree = "<group>"; };
@@ -117,7 +116,6 @@
 				ED23E6D22ABAD82B00DEF359 /* notion-pr-sync.yml */,
 				ED23E6D62ABAD82B00DEF359 /* publish-new-release.yml */,
 				ED23E6D92ABAD82B00DEF359 /* slack-notify.yml */,
-				ED23E6D72ABAD82B00DEF359 /* test.yml */,
 			);
 			name = workflows;
 			path = .github/workflows;
