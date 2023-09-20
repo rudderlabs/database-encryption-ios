@@ -40,6 +40,7 @@
 		ED23E6DA2ABAD82B00DEF359 /* build-and-quality-checks.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-quality-checks.yml"; sourceTree = "<group>"; };
 		ED23E6DB2ABAD82B00DEF359 /* draft-new-release.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "draft-new-release.yml"; sourceTree = "<group>"; };
 		ED23E6DD2ABAE2BA00DEF359 /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		ED23E6DE2ABAECC400DEF359 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
 		ED87386D2AB2D3540076D24A /* RudderDatabaseEncryption_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderDatabaseEncryption_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderDatabaseEncryption.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED8738852AB2EB430076D24A /* RSEncryptedDatabaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSEncryptedDatabaseProvider.h; sourceTree = "<group>"; };
@@ -119,13 +120,22 @@
 			path = .github/workflows;
 			sourceTree = "<group>";
 		};
+		ED23E6DF2ABAECF800DEF359 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				ED87389A2AB35FC60076D24A /* Podfile */,
+				ED23E6CF2ABAD30700DEF359 /* README.md */,
+				ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */,
+				ED23E6DE2ABAECC400DEF359 /* sonar-project.properties */,
+				ED23E6D02ABAD82B00DEF359 /* workflows */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		ED8738632AB2D3540076D24A = {
 			isa = PBXGroup;
 			children = (
-				ED23E6D02ABAD82B00DEF359 /* workflows */,
-				ED23E6CF2ABAD30700DEF359 /* README.md */,
-				ED87389A2AB35FC60076D24A /* Podfile */,
-				ED87387C2AB2DDE00076D24A /* RudderDatabaseEncryption.podspec */,
+				ED23E6DF2ABAECF800DEF359 /* Other */,
 				ED87386F2AB2D3540076D24A /* Sources */,
 				ED87386E2AB2D3540076D24A /* Products */,
 				660287B9E3F8D4B4969B7CD4 /* Pods */,
@@ -526,10 +536,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 133591411AA2360C440A00AB /* Pods-RudderDatabaseEncryption-iOS.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = WPX9KRKA8B;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -547,6 +557,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -588,10 +599,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5DD0FED8F53F0E04084C65F /* Pods-RudderDatabaseEncryption-tvOS.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = WPX9KRKA8B;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -609,6 +620,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -652,10 +664,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52C575B23D49414A46FD3EB3 /* Pods-RudderDatabaseEncryption-watchOS.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = WPX9KRKA8B;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -673,6 +685,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -684,10 +697,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6803F930E5BBF42030562C7 /* Pods-RudderDatabaseEncryption-watchOS.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = WPX9KRKA8B;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -705,6 +718,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderDatabaseEncryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

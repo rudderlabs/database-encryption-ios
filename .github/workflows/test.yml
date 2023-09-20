@@ -31,7 +31,7 @@ jobs:
     
       - name: Run build-wrapper
         run: |
-          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild -workspace RudderDatabaseEncryption.xcworkspace -scheme RudderDatabaseEncryptionTests-iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' | xcpretty
+          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild -workspace RudderDatabaseEncryption.xcworkspace -scheme RudderDatabaseEncryption-iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' | xcpretty
                                       
       - name: SonarCloud Scan
         env:
