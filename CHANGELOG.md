@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/rudderlabs/database-encryption-ios/compare/v1.0.0...v1.1.0) (2023-09-28)
+
+
+### Features
+
+* upgraded Rudder(~> 1.21) SDK ([2f04762](https://github.com/rudderlabs/database-encryption-ios/commit/2f0476279538253773e99b98110c59d33caff171))
+
 ## [1.1.0](https://github.com/rudderlabs/metrics-reporter-ios/compare/v1.0.0...v1.1.0) (2023-09-19)
 
 
