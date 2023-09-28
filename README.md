@@ -30,7 +30,7 @@ This repository contains the resources and assets required to integrate the [Rud
 1. `RudderDatabaseEncryption` is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your `Podfile`:
 
 ```ruby
-pod 'RudderDatabaseEncryption', '~> 1.0.0'
+pod 'RudderDatabaseEncryption', '~> 1.1.0'
 ```
 2. Run the `pod install` command.
 
